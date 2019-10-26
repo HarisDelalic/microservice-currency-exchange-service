@@ -21,6 +21,7 @@ public class ExchangeValue {
     @Column(name = "valueTo")
     @Getter @Setter private String to;
     @Getter @Setter private BigDecimal conversionMultiple;
+    @Getter @Setter Integer port;
 
     public ExchangeValue(String from, String to, BigDecimal conversionMultiple) {
         this.from = from;
